@@ -1,6 +1,6 @@
 {
   "name": "cadastro",
-  "homepage": "https://andre-0303.github.io/cadas-supabase",
+  "homepage": "https://andre-0303.github.io/cadas-supabase/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.47.14",
